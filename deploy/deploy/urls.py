@@ -16,11 +16,14 @@ Including another URLconf
 # 상위 urls.py에 내용추가 
 from django.contrib import admin
 from django.urls import path, include
+from member import views
 
 urlpatterns = [
     
     path('admin/', admin.site.urls),
     # include로 경로 생성할때 마다 => 각 어플경로에 하위 urls.py 생성
     path('member/', include('member.urls')),
+    path('service/', include('service.urls')),
+    path('', views.home) # 메인_화면 ,
 
 ]

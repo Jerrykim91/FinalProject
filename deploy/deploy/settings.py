@@ -25,12 +25,14 @@ SECRET_KEY = '*wh6x&9bh_c=!hgte04@$s=-c4cffzs!$2oiv8b4(q!rs)+u0j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = ['*'] # 모든 사용자 접속
+ALLOWED_HOSTS = ['*'] # 개발자만 접속
 
 # Application definition
 
 INSTALLED_APPS = [
+    'member',
+    'service',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
