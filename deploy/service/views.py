@@ -20,7 +20,7 @@ from django.core.files.base import ContentFile
 # # Create your views here.
 # print( '모델을 올린다 => ', type( model) )
 
-# 텍스트 서비스 
+# 텍스트 서비스 -> 여기 넣어줘 
 def text(food_name):
     """
     food_img에서 던져 주는 값을 제대로 아웃풋을 낼 것
@@ -38,7 +38,7 @@ def food_img(request):
     pass
     # if request.method == 'GET':
     #         print(1)
-    #         return render(request, 'service/service.html') 
+    #         return render(request, 'service/camera.html') 
 
     # elif request.method=='POST':
         
@@ -73,9 +73,7 @@ def food_img(request):
     #     pred = model.predict_classes(img_num)
     #     print(pred)
         
-        
-
-    #     return render(request, 'service/service.html') #redirect('/member/join1.html')
+    #     return render(request, 'service/camera.html') #redirect('/service/camera.html')
 
 # 사진 촬영
 def take_pic(click):

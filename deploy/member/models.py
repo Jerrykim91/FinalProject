@@ -12,7 +12,7 @@ from django.contrib.auth.models import AbstractUser, UserManager
 
     # user_id    = models.CharField(primary_key=True, max_length=20, blank=True)
     # user_pw    = models.CharField(max_length=30, blank=True)
-    # j_foodex   = models.BinaryField() # 안하는걸로 
+
     # j_taste    = models.CharField(max_length=50, blank=True)
     
 '''

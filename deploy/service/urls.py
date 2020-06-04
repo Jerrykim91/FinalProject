@@ -9,6 +9,6 @@ urlpatterns = [
 
     # path('take_pic', views.take_pic),
     path('food_img', views.food_img),
-    # path('text', views.text),
+    path('text', views.text),
 
 ]
